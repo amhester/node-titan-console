@@ -1,3 +1,5 @@
+"use strict";
+
 var argv = require('yargs').argv;
 var gremlin = require('gremlin-client');
 
