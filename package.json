@@ -1,0 +1,31 @@
+{
+  "name": "node-titan-console",
+  "version": "1.0.0",
+  "description": "Connect and run gremlin queries against a hosted tiandb instance",
+  "main": "titan-console.js",
+  "dependencies": {
+    "gremlin-client": "^1.0.3",
+    "yargs": "^3.31.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amhester/node-titan-console.git"
+  },
+  "keywords": [
+    "titan",
+    "titandb",
+    "gremlin",
+    "tinkerpop",
+    "gremlin-client"
+  ],
+  "author": "Alex Hester",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amhester/node-titan-console/issues"
+  },
+  "homepage": "https://github.com/amhester/node-titan-console#readme"
+}
