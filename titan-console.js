@@ -3,21 +3,19 @@ var argv = require('yargs').argv;
 var gremlin = require('gremlin-client');
 var Spinner = require('cli-spinner').Spinner;
 
-
 let port = argv.port || 8182;
 let host = argv.host || 'localhost';
-let query = argv.query;
 
 var client = gremlin.createClient(port, host);
 
-if(query) {
-	sendQuery();
+if(argv.query) {
+	sendQuery(argv.query);
 	process.exit(1);
 } else {
 	promptQuery();
 }
 
-function sendQuery() {
+function sendQuery(query) {
 	console.log('\n');
 	var spinner = new Spinner('processing.. %s');
 	spinner.setSpinnerString(0);
@@ -38,8 +36,8 @@ function promptQuery() {
 	process.stdin.resume();
 	process.stdin.once('data', function (data) {
 		process.stdin.pause();
-		query = data.toString().trim();
-		sendQuery();
+		let query = data.toString().trim();
+		sendQuery(query);
 	});
 }
 
