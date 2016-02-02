@@ -2,6 +2,9 @@
   "name": "node-titan-console",
   "version": "1.0.0",
   "description": "Connect and run gremlin queries against a hosted tiandb instance",
+  "bin": {
+    "TitanClient": "titan-console.js"
+  },
   "main": "titan-console.js",
   "dependencies": {
     "cli-spinner": "^0.2.2",

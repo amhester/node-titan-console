@@ -1,4 +1,5 @@
-'use strict'
+#!/usr/bin/env node
+'use strict';
 var argv = require('yargs').argv;
 var gremlin = require('gremlin-client');
 var Spinner = require('cli-spinner').Spinner;
